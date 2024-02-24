@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "My extension",
+  "version": "1.0",
+  "description": "Testing",
+  "background": {
+    "service_worker": "service_worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "index.html"
+   },
+  "permissions": [
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ]
+}
